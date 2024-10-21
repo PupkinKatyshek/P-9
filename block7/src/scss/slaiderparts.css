@@ -1,0 +1,252 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+body {
+  background-color: var(--body-color);
+  font-family: 'TT Lakes';
+}
+
+li {
+  list-style-type: none;
+}
+
+:root {
+  --line-color: #d9fff5;
+}
+
+.slaider-part {
+  padding-top: 20px;
+}
+
+.line {
+  background-color: var(--line-color);
+  height: 1px;
+}
+.h2 {
+  display: block;
+  letter-spacing: -0.2px;
+  font-size: 16px;
+  padding: 16px;
+  color: var(--navi-name-color);
+  line-height: 24px;
+  font-weight: 400;
+  background-image: linear-gradient(90deg, #f8f8f8 30%, #ffffff 60%);
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: var(--swiper-bullet);
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #b5b6bc;
+}
+
+.card {
+  height: 72px;
+  width: 240px;
+  border: solid 1px #eaeaea;
+  border-radius: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card:hover {
+  opacity: 0.5;
+}
+
+.large {
+  display: none;
+}
+
+.viewmore {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #f8f8f8;
+  cursor: pointer;
+  left: 24px;
+}
+
+.viewmore:active {
+  opacity: 0.5;
+  transform: translateY(1.5px);
+}
+
+.viewmore:hover {
+  opacity: 0.7;
+}
+
+.icon-button {
+  background-image: url(../img/expand.svg);
+  width: 24px;
+  height: 24px;
+}
+
+.icon-text {
+  font-family: 'TT Lakes';
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  body {
+    min-width: 320px;
+    /* max-width: 320px; */
+    margin: 0 auto;
+  }
+
+  .slider-container {
+    overflow: hidden;
+  }
+
+  .swiper-wrapper {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .swiper-pagination-fraction,
+  .swiper-pagination-custom,
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 0px !important;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  .card {
+    height: 72px;
+    width: 240px;
+    margin: 0;
+    flex-shrink: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 16px;
+    overflow: hidden;
+    justify-content: space-between;
+  }
+
+  .viewmore {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    /* max-width: 768px; */
+    min-width: 768px;
+    margin: 0 auto;
+  }
+
+  .viewmore {
+    display: flex;
+  }
+
+  .h2 {
+    padding: 16px 406px 16px 24px;
+  }
+
+  .card {
+    height: 72px;
+    width: 224px;
+    border: solid 1px #eaeaea;
+    border-radius: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    flex-shrink: 0;
+    margin: 0;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 16px;
+    overflow: hidden;
+    justify-content: space-between;
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+  .slider-container .swiper-wrapper {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 24px;
+    padding: 24px;
+    justify-content: space-around;
+  }
+
+  .swiper-wrapper--polovina {
+    overflow: hidden;
+    height: 150px;
+    transition: 500ms;
+  }
+
+  .swiper-wrapper--vesb-blok {
+    height: 336px;
+    transition: 500ms;
+  }
+}
+
+@media (min-width: 1120px) {
+  body {
+    max-width: 1120px;
+    min-width: 1120px;
+    margin: 0 auto;
+  }
+
+  .swiper-wrapper--vesb-blok {
+    height: 248px;
+    transition: 500ms;
+  }
+
+  .h2 {
+    padding: 16px 750px 16px 32px;
+    box-sizing: border-box;
+  }
+
+  .card {
+    border: solid 1px #eaeaea;
+    border-radius: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    height: 72px;
+    width: 240px;
+    margin: 0;
+    flex-shrink: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 16px;
+    overflow: hidden;
+    justify-content: space-between;
+  }
+
+  .slider-container .swiper-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 32px;
+    padding: 24px 32px 24px 32px;
+  }
+
+  .viewmore {
+    left: 32px;
+  }
+}

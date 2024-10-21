@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -10,7 +10,278 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
-    <img src="./img/webpack.svg" alt="Webpack Logo" width="200px" />
-    <h3>Ремонт техники</h3>
+    <main>
+      <header class="header">
+        <div class="header__left">
+          <button class="buttons header__burger">
+            <img src="./img/burger1.svg" alt="picture" />
+          </button>
+          <a class="header__logo" href="#">
+            <img src="./img/Group.png" alt="logo" />
+          </a>
+        </div>
+        <div class="header__center">
+          <button class="buttons">
+            <img src="./img/call.svg" alt="call" />
+          </button>
+          <button class="buttons">
+            <img src="./img/chat.svg" alt="chat" />
+          </button>
+          <button class="buttons">
+            <img src="./img/profile.svg" alt="profile" />
+          </button>
+        </div>
+        <div class="header__right">
+          <button class="buttons header__repair">
+            <img src="./img/repair.svg" alt="repair" />
+          </button>
+          <button class="buttons header__search">
+            <img src="./img/checkstatus.svg" alt="search" />
+          </button>
+        </div>
+      </header>
+      <div class="h1">
+        Услуги и сервисы
+        <div class="h1__visible">
+          <button class="h1__link">
+            Оставить заявку<img
+              class="buttons"
+              src="./img/repair.svg"
+              alt="repair"
+            />
+          </button>
+          <button class="h1__link">
+            Статус ремонта<img
+              class="buttons"
+              src="./img/checkstatus.svg"
+              alt="search"
+            />
+          </button>
+        </div>
+      </div>
+      <nav class="navi">
+        <ul class="navi__list">
+          <li class="navi__elem">
+            <a class="navi__name" href="#" autofocus
+              >Ремонтируемые устройства</a
+            >
+          </li>
+          <li class="navi__elem">
+            <a class="navi__name" href="#">Ремонтируемые бренды</a>
+          </li>
+          <li class="navi__elem">
+            <a class="navi__name" href="#">Цены на услуги</a>
+          </li>
+          <li class="navi__elem">
+            <a class="navi__name" href="#">Адреса сервисных центров</a>
+          </li>
+          <li class="navi__elem">
+            <a class="navi__name" href="#">Специальные цены</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="about">
+        <div class="about__container">
+          <article class="about__text">
+            Мы являемся авторизованным сервисным центром по ремонту техники
+            Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+            официальной гарантией
+            <br />производителя.
+            <p>
+              Мы успешно работаем с 1992 года и заслужили репутацию надежного
+              партнера , что подтверждает большое количество постоянных
+              клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям
+              и, в свою очередь, советуют нас родным и близким.
+            </p>
+          </article>
+          <button class="about__btn">
+            <img class="about__down" src="./img/expand.svg" alt="down" />
+            Читать далее
+          </button>
+        </div>
+        <div class="kartinka"></div>
+      </div>
+    </main>
+    <div class="lh-side lh-side--surfaced">
+      <header class="side-bar">
+        <button class="buttons">
+          <img src="./img/x-close.svg" alt="close" />
+        </button>
+        <a class="logo" href="#"> <img src="./img/LHGroup.svg" alt="logo" /></a>
+        <button class="buttons side-bar__search">
+          <img src="./img/LHsearch.svg" alt="search" />
+        </button>
+      </header>
+      <nav class="nav-main">
+        <ul class="nav-main__list">
+          <li class="nav-main__item">
+            <a class="nav-main__link" href="#" autofocus>Ремонт техники</a>
+          </li>
+          <li class="nav-main__item">
+            <a class="nav-main__link" href="#">Услуги и сервисы</a>
+          </li>
+          <li class="nav-main__item">
+            <a class="nav-main__link" href="#">Корпоративным клиент</a>
+          </li>
+          <li class="nav-main__item">
+            <a class="nav-main__link" href="#">Продавцам техники</a>
+          </li>
+          <li class="nav-main__item">
+            <a class="nav-main__link" href="#">Партнерам</a>
+          </li>
+          <li class="nav-main__item">
+            <a class="nav-main__link" href="#">Производителям</a>
+          </li>
+          <li class="nav-main__item">
+            <a class="nav-main__link" href="#">Наши сервисные центры</a>
+          </li>
+          <li class="nav-main__item">
+            <a class="nav-main__link" href="#">Контакты</a>
+          </li>
+        </ul>
+
+        <footer class="side-footer">
+          <div class="side-footer__btns">
+            <button class="buttons">
+              <img src="./img/call.svg" alt="call" />
+            </button>
+            <button class="buttons">
+              <img src="./img/chat.svg" alt="chat" />
+            </button>
+            <button class="buttons">
+              <img src="./img/profile.svg" alt="profile" />
+            </button>
+          </div>
+          <address class="address">
+            <a class="address__mail" href="mailto:#">mail@cps.com</a>
+            <a class="address__tel" href="tel:88008908900">8 800 890 8900</a>
+          </address>
+          <div class="lang">
+            <div>
+              <input
+                type="radio"
+                class="lang__switcher"
+                id="RU"
+                name="language"
+                checked="checked"
+              /><label class="lang__label" for="RU">RU</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                class="lang__switcher"
+                id="EN"
+                name="language"
+              /><label class="lang__label" for="EN">EN</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                class="lang__switcher"
+                id="CH"
+                name="language"
+              /><label class="lang__label" for="CH">CH</label>
+            </div>
+          </div>
+        </footer>
+      </nav>
+    </div>
+    <div class="slaider-part">
+      <div class="line"></div>
+      <h2 class="h2">РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</h2>
+      <!-- Основной контейнер слайдера -->
+      <div class="slider-container" data-mobile="false">
+        <!-- Дополнительная необходимая оболочка -->
+        <div class="swiper-wrapper swiper-wrapper--polovina">
+          <!-- Слайды -->
+          <div class="card">
+            <img class="brands" src="./img/Lenovo.svg" alt="#" /><img
+              src="./img/arrow.svg"
+              alt="#"
+            />
+          </div>
+          <div class="card">
+            <img class="brands" src="./img/samsung.svg" alt="#" /><img
+              src="./img/arrow.svg"
+              alt="#"
+            />
+          </div>
+          <div class="card">
+            <img class="brands" src="./img/sony.svg" alt="#" /><img
+              src="./img/arrow.svg"
+              alt="#"
+            />
+          </div>
+          <div class="card">
+            <img class="brands" src="./img/hp.svg" alt="#" /><img
+              src="./img/arrow.svg"
+              alt="#"
+            />
+          </div>
+          <div class="card">
+            <img src="./img/ViewSonic.svg" alt="#" />
+            <img src="./img/arrow.svg" alt="#" />
+          </div>
+          <div class="card">
+            <img class="brands" src="./img/acer.svg" alt="#" />
+            <img src="./img/arrow.svg" alt="#" />
+          </div>
+          <div class="card">
+            <img class="brands" src="./img/apple.svg" alt="#" /><img
+              src="./img/arrow.svg"
+              alt="#"
+            />
+          </div>
+          <div class="card">
+            <img class="brands" src="./img/bosch.svg" alt="#" /><img
+              src="./img/arrow.svg"
+              alt="#"
+            />
+          </div>
+          <div class="card">
+            <img class="brands" src="./img/hp.svg" alt="#" /><img
+              src="./img/arrow.svg"
+              alt="#"
+            />
+          </div>
+          <div class="card">
+            <img class="brands" src="./img/Lenovo.svg" alt="#" /><img
+              src="./img/arrow.svg"
+              alt="#"
+            />
+          </div>
+          <div class="card">
+            <img class="brands" src="./img/samsung.svg" alt="#" /><img
+              src="./img/arrow.svg"
+              alt="#"
+            />
+          </div>
+          <div class="card">
+            <img class="brands" src="./img/sony.svg" alt="#" /><img
+              src="./img/arrow.svg"
+              alt="#"
+            />
+          </div>
+        </div>
+
+        <!-- Если нужны точечки под слайдами -->
+        <div class="swiper-pagination"></div>
+        <!-- ЕСли нужны стрелки -->
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+
+        <!-- Если нужна полоса прокрутки -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+      </div>
+
+      <!-- <button class="viewmore">
+        <img class="strelochka" src="./img/expand.svg" alt=">>" />Показать всё
+      </button> -->
+
+      <button class="viewmore">
+        <span class="icon-button"></span>
+        <span class="icon-text">Показать всё</span>
+      </button>
+    </div>
   </body>
 </html>
