@@ -287,7 +287,18 @@ main {
   position: relative;
 }
 
+.viewmore--visible {
+  display: flex;
+  position: relative;
+  left: 0px;
+}
+
 @media (max-width: 768px) {
+  .about__text--polovinka {
+    height: 90px;
+    transition: 500ms;
+  }
+
   .header__center {
     display: none;
   }
@@ -310,6 +321,11 @@ main {
 }
 
 @media (min-width: 768px) {
+  .about__text--polovinka {
+    height: 160px;
+    transition: 500ms;
+  }
+
   .kartinka {
     background-image: url(../img/logotip-360.png);
     width: 50%;
@@ -381,9 +397,10 @@ main {
     width: 320px;
   } */
 
-  .about__text {
+  ..about__text--polovinka {
     height: 90px;
     width: auto;
+    transition: 500ms;
   }
   .about {
     flex-direction: column;
@@ -455,9 +472,10 @@ main {
     width: 50%;
   }
 
-  .about__text {
+  ..about__text--polovinka {
     width: 490px;
     height: 160px;
+    transition: 500ms;
   }
 
   .navi {
@@ -476,4 +494,9 @@ main {
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
+}
+
+.about__text--vesb-blok {
+  height: 303px;
+  transition: 500ms;
 }
