@@ -475,7 +475,7 @@ main {
   ..about__text--polovinka {
     width: 490px;
     height: 160px;
-    transition: 500ms;
+    /* transition: 500ms; */
   }
 
   .navi {
@@ -497,6 +497,6 @@ main {
 }
 
 .about__text--vesb-blok {
-  height: 303px;
-  transition: 500ms;
+  height: fit-content;
+  /* transition: 500ms; */
 }

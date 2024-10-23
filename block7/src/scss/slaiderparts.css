@@ -195,8 +195,19 @@ li {
     transition: 500ms;
   }
 
+  .swiper-wrapper--polovinka {
+    overflow: hidden;
+    height: 192px;
+    transition: 500ms;
+  }
+
   .swiper-wrapper--vesb-blok {
     height: 336px;
+    transition: 500ms;
+  }
+
+  .swiper-wrapper--vesb-bl4ok {
+    height: 680px;
     transition: 500ms;
   }
 }
@@ -210,6 +221,11 @@ li {
 
   .swiper-wrapper--vesb-blok {
     height: 248px;
+    transition: 500ms;
+  }
+
+  .swiper-wrapper--vesb-bl4ok {
+    height: 500px;
     transition: 500ms;
   }
 
@@ -249,4 +265,91 @@ li {
   .viewmore {
     left: 32px;
   }
+}
+
+/* Второй слайдер */
+
+.repair-card {
+  border: solid 1px #eaeaea;
+  border-radius: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+  background-color: #ffffff;
+  height: 160px;
+  width: 240px;
+  margin: 0;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 16px;
+  overflow: hidden;
+  justify-content: space-between;
+}
+
+.repair-card span {
+  align-self: flex-start;
+}
+.repair-card img {
+  align-self: flex-end;
+}
+
+@media (min-width: 768px) {
+  .repair-card {
+    width: 224px;
+  }
+}
+@media (min-width: 1120px) {
+  .repair-card {
+    width: 240px;
+  }
+}
+
+/* Третий слайдер */
+
+.price-card {
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  height: 216px;
+  border: solid 1px #eaeaea;
+  border-radius: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+  background-color: #ffffff;
+  font-weight: 400;
+  padding: 16px;
+  justify-content: space-between;
+  gap: 16px;
+  flex-shrink: 0;
+}
+
+.price-card__service {
+  display: flex;
+  flex-direction: column;
+}
+
+.price-card__service:before {
+  content: 'Ремонтные услуги';
+  color: #b5b6bc;
+}
+
+.price-card__price {
+  display: flex;
+  flex-direction: column;
+}
+
+.price-card__price:before {
+  content: 'Цена';
+  color: #b5b6bc;
+}
+
+.price-card__time {
+  display: flex;
+  flex-direction: column;
+}
+
+.price-card__time:before {
+  content: 'Срок';
+  color: #b5b6bc;
 }
