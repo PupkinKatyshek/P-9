@@ -214,7 +214,7 @@ li {
 
 @media (min-width: 1120px) {
   body {
-    max-width: 1120px;
+    max-width: 1440px;
     min-width: 1120px;
     margin: 0 auto;
   }
@@ -315,11 +315,12 @@ li {
   border: solid 1px #eaeaea;
   border-radius: 5px;
   box-sizing: border-box;
-  cursor: pointer;
+  /* cursor: pointer; */
   background-color: #ffffff;
   font-weight: 400;
   padding: 16px;
   justify-content: space-between;
+  /* align-items: center; */
   gap: 16px;
   flex-shrink: 0;
 }
@@ -352,4 +353,104 @@ li {
 .price-card__time:before {
   content: 'Срок';
   color: #b5b6bc;
+}
+
+.price_card__order {
+  display: flex;
+  color: #ffffff;
+  background-color: rgb(255, 62, 121);
+  border-radius: 16px;
+  width: 119px;
+  height: 32px;
+  border: 1px solid transparent;
+  flex-shrink: 0;
+  position: relative;
+  bottom: 50px;
+  left: 105px;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+
+.price-card--hidden {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .slaider3 {
+    border: 1px solid #b5b6bc;
+    border-radius: 8px;
+    background-color: #ffffff;
+  }
+
+  .price-card {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 0.5fr;
+    width: 100%;
+    height: auto;
+    border: 1px solid transparent;
+    /* border-radius: 5px; */
+    box-sizing: border-box;
+    /* cursor: pointer; */
+    /* background-color: #ffffff; */
+    font-weight: 400;
+    padding: 16px;
+    justify-content: space-between;
+    gap: 16px;
+    flex-shrink: 0;
+    background-color: transparent;
+    align-items: center;
+  }
+
+  .price-card__service {
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .price-card__service:before {
+    content: 'Ремонтные услуги';
+    color: #b5b6bc;
+    display: none;
+  }
+
+  .price-card__price {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .price-card__price:before {
+    content: 'Цена';
+    color: #b5b6bc;
+    display: none;
+  }
+
+  .price-card__time {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .price-card__time:before {
+    content: 'Срок';
+    color: #b5b6bc;
+    display: none;
+  }
+
+  .price_card__order {
+    align-items: center;
+    justify-content: space-around;
+    left: 0px;
+    bottom: 0px;
+    cursor: pointer;
+  }
+
+  .price_card__order--hidden {
+    visibility: hidden;
+  }
+
+  .price-card--hidden {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 0.5fr;
+    padding-left: 60px;
+    padding-right: 40px;
+  }
 }

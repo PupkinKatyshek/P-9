@@ -1,0 +1,46 @@
+.oferta {
+  width: 55%;
+  padding-top: 32px;
+  padding-bottom: 16px;
+}
+
+.oferta_button {
+  display: flex;
+  align-items: center;
+  /* width: 316px; */
+  justify-content: space-between;
+  gap: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.footer_law {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 80px 16px 0px 16px;
+  color: #7e7e82;
+}
+
+.footer_law__CPS {
+  width: 30%;
+}
+
+@media (max-width: 1120px) {
+  .oferta {
+    width: 55%;
+    padding-top: 32px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+  }
+
+  .oferta_button {
+    display: flex;
+    align-items: center;
+    /* width: 316px; */
+    justify-content: space-between;
+    gap: 16px;
+    font-weight: 500;
+    padding-left: 16px;
+  }
+}

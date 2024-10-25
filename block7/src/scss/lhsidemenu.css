@@ -151,3 +151,16 @@ ul li {
   /* left: 0px; */
   transition: 500ms;
 }
+
+@media (min-width: 1440px) {
+  .lh-side {
+    left: 0px;
+    width: 250px;
+  }
+  .lh-side--surfaced {
+    box-shadow: none;
+  }
+  body {
+    width: 1370px;
+  }
+}
