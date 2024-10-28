@@ -10,521 +10,538 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
-    <main>
-      <header class="header">
-        <div class="header__left">
-          <button class="buttons header__burger">
-            <img src="./img/burger1.svg" alt="picture" />
+    <div class="wide">
+      <div class="lh-side lh-side--surfaced">
+        <header class="side-bar">
+          <button class="buttons side-bar__close">
+            <img src="./img/x-close.svg" alt="close" />
           </button>
-          <a class="header__logo" href="#">
-            <img src="./img/Group.png" alt="logo" />
-          </a>
-        </div>
-        <div class="header__center">
-          <button class="buttons">
-            <img src="./img/call.svg" alt="call" />
+          <a class="logo" href="#">
+            <img src="./img/LHGroup.svg" alt="logo"
+          /></a>
+          <button class="buttons side-bar__search">
+            <img src="./img/LHsearch.svg" alt="search" />
           </button>
-          <button class="buttons">
-            <img src="./img/chat.svg" alt="chat" />
-          </button>
-          <button class="buttons">
-            <img src="./img/profile.svg" alt="profile" />
-          </button>
-        </div>
-        <div class="header__right">
-          <button class="buttons header__repair">
-            <img src="./img/repair.svg" alt="repair" />
-          </button>
-          <button class="buttons header__search">
-            <img src="./img/checkstatus.svg" alt="search" />
-          </button>
-        </div>
-      </header>
-      <div class="h1">
-        Услуги и сервисы
-        <div class="h1__visible">
-          <button class="h1__link">
-            Оставить заявку<img
-              class="buttons"
-              src="./img/repair.svg"
-              alt="repair"
-            />
-          </button>
-          <button class="h1__link">
-            Статус ремонта<img
-              class="buttons"
-              src="./img/checkstatus.svg"
-              alt="search"
-            />
-          </button>
-        </div>
-      </div>
-      <nav class="navi">
-        <ul class="navi__list">
-          <li class="navi__elem">
-            <a class="navi__name" href="#" autofocus
-              >Ремонтируемые устройства</a
-            >
-          </li>
-          <li class="navi__elem">
-            <a class="navi__name" href="#">Ремонтируемые бренды</a>
-          </li>
-          <li class="navi__elem">
-            <a class="navi__name" href="#">Цены на услуги</a>
-          </li>
-          <li class="navi__elem">
-            <a class="navi__name" href="#">Адреса сервисных центров</a>
-          </li>
-          <li class="navi__elem">
-            <a class="navi__name" href="#">Специальные цены</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="about">
-        <div class="about__container">
-          <article class="about__text about__text--polovinka">
-            Мы являемся авторизованным сервисным центром по ремонту техники
-            Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
-            официальной гарантией
-            <br />производителя.
-            <p>
-              Мы успешно работаем с 1992 года и заслужили репутацию надежного
-              партнера , что подтверждает большое количество постоянных
-              клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям
-              и, в свою очередь, советуют нас родным и близким.
-            </p>
-            <br />
-            <p
-              >Сложно сказать, почему стремящиеся вытеснить традиционное
-              производство, нанотехнологии могут быть представлены в
-              исключительно положительном свете. Приятно, граждане, наблюдать,
-              как элементы политического процесса лишь добавляют фракционных
-              разногласий и заблокированы в рамках своих собственных
-              рациональных ограничений. С другой стороны, экономическая повестка
-              сегодняшнего дня играет определяющее значение для соответствующих
-              условий активизации.</p
-            >
-          </article>
-          <button class="viewmore viewmore--visible">
-            <span class="icon-button"></span>
-            <span class="icon-text">Читать далее</span>
-          </button>
-        </div>
-        <div class="kartinka"></div>
-      </div>
-    </main>
-    <!-- Левая боковина -->
-    <div class="lh-side lh-side--surfaced">
-      <header class="side-bar">
-        <button class="buttons">
-          <img src="./img/x-close.svg" alt="close" />
-        </button>
-        <a class="logo" href="#"> <img src="./img/LHGroup.svg" alt="logo" /></a>
-        <button class="buttons side-bar__search">
-          <img src="./img/LHsearch.svg" alt="search" />
-        </button>
-      </header>
-      <nav class="nav-main">
-        <ul class="nav-main__list">
-          <li class="nav-main__item">
-            <a class="nav-main__link" href="#" autofocus>Ремонт техники</a>
-          </li>
-          <li class="nav-main__item">
-            <a class="nav-main__link" href="#">Услуги и сервисы</a>
-          </li>
-          <li class="nav-main__item">
-            <a class="nav-main__link" href="#">Корпоративным клиент</a>
-          </li>
-          <li class="nav-main__item">
-            <a class="nav-main__link" href="#">Продавцам техники</a>
-          </li>
-          <li class="nav-main__item">
-            <a class="nav-main__link" href="#">Партнерам</a>
-          </li>
-          <li class="nav-main__item">
-            <a class="nav-main__link" href="#">Производителям</a>
-          </li>
-          <li class="nav-main__item">
-            <a class="nav-main__link" href="#">Наши сервисные центры</a>
-          </li>
-          <li class="nav-main__item">
-            <a class="nav-main__link" href="#">Контакты</a>
-          </li>
-        </ul>
+        </header>
+        <nav class="nav-main">
+          <ul class="nav-main__list">
+            <li class="nav-main__item">
+              <a class="nav-main__link" href="#" autofocus>Ремонт техники</a>
+            </li>
+            <li class="nav-main__item">
+              <a class="nav-main__link" href="#">Услуги и сервисы</a>
+            </li>
+            <li class="nav-main__item">
+              <a class="nav-main__link" href="#">Корпоративным клиент</a>
+            </li>
+            <li class="nav-main__item">
+              <a class="nav-main__link" href="#">Продавцам техники</a>
+            </li>
+            <li class="nav-main__item">
+              <a class="nav-main__link" href="#">Партнерам</a>
+            </li>
+            <li class="nav-main__item">
+              <a class="nav-main__link" href="#">Производителям</a>
+            </li>
+            <li class="nav-main__item">
+              <a class="nav-main__link" href="#">Наши сервисные центры</a>
+            </li>
+            <li class="nav-main__item">
+              <a class="nav-main__link" href="#">Контакты</a>
+            </li>
+          </ul>
 
-        <footer class="side-footer">
-          <div class="side-footer__btns">
-            <button class="buttons">
-              <img src="./img/call.svg" alt="call" />
-            </button>
-            <button class="buttons">
-              <img src="./img/chat.svg" alt="chat" />
-            </button>
-            <button class="buttons">
-              <img src="./img/profile.svg" alt="profile" />
-            </button>
-          </div>
-          <address class="address">
-            <a class="address__mail" href="mailto:#">mail@cps.com</a>
-            <a class="address__tel" href="tel:88008908900">8 800 890 8900</a>
-          </address>
-          <div class="lang">
-            <div>
-              <input
-                type="radio"
-                class="lang__switcher"
-                id="RU"
-                name="language"
-                checked="checked"
-              /><label class="lang__label" for="RU">RU</label>
+          <footer class="side-footer">
+            <div class="side-footer__btns">
+              <button class="buttons">
+                <img src="./img/call.svg" alt="call" />
+              </button>
+              <button class="buttons">
+                <img src="./img/chat.svg" alt="chat" />
+              </button>
+              <button class="buttons">
+                <img src="./img/profile.svg" alt="profile" />
+              </button>
             </div>
-            <div>
-              <input
-                type="radio"
-                class="lang__switcher"
-                id="EN"
-                name="language"
-              /><label class="lang__label" for="EN">EN</label>
+            <address class="address">
+              <a class="address__mail" href="mailto:#">mail@cps.com</a>
+              <a class="address__tel" href="tel:88008908900">8 800 890 8900</a>
+            </address>
+            <div class="lang">
+              <div>
+                <input
+                  type="radio"
+                  class="lang__switcher"
+                  id="RU"
+                  name="language"
+                  checked="checked"
+                /><label class="lang__label" for="RU">RU</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  class="lang__switcher"
+                  id="EN"
+                  name="language"
+                /><label class="lang__label" for="EN">EN</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  class="lang__switcher"
+                  id="CH"
+                  name="language"
+                /><label class="lang__label" for="CH">CH</label>
+              </div>
             </div>
-            <div>
-              <input
-                type="radio"
-                class="lang__switcher"
-                id="CH"
-                name="language"
-              /><label class="lang__label" for="CH">CH</label>
+          </footer>
+        </nav>
+      </div>
+      <div class="wide-right">
+        <main>
+          <header class="header">
+            <div class="header__left">
+              <button class="buttons header__burger">
+                <img src="./img/burger1.svg" alt="picture" />
+              </button>
+              <a class="header__logo" href="#">
+                <img src="./img/Group.png" alt="logo" />
+              </a>
+            </div>
+            <div class="header__center">
+              <button class="buttons">
+                <img src="./img/call.svg" alt="call" />
+              </button>
+              <button class="buttons">
+                <img src="./img/chat.svg" alt="chat" />
+              </button>
+              <button class="buttons">
+                <img src="./img/profile.svg" alt="profile" />
+              </button>
+            </div>
+            <div class="header__right">
+              <button class="buttons header__repair">
+                <img src="./img/repair.svg" alt="repair" />
+              </button>
+              <button class="buttons header__search">
+                <img src="./img/checkstatus.svg" alt="search" />
+              </button>
+            </div>
+          </header>
+          <div class="h1">
+            Услуги и сервисы
+            <div class="h1__visible">
+              <button class="h1__link">
+                Оставить заявку<img
+                  class="buttons"
+                  src="./img/repair.svg"
+                  alt="repair"
+                />
+              </button>
+              <button class="h1__link">
+                Статус ремонта<img
+                  class="buttons"
+                  src="./img/checkstatus.svg"
+                  alt="search"
+                />
+              </button>
             </div>
           </div>
-        </footer>
-      </nav>
-    </div>
-    <!-- Первый слайдер -->
-    <div class="slaider-part">
-      <div class="line"></div>
-      <h2 class="h2">РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</h2>
-      <!-- Основной контейнер слайдера -->
-      <div class="slider-container slaider1" data-mobile="false">
-        <!-- Дополнительная необходимая оболочка -->
-        <div class="swiper-wrapper swiper-wrapper--polovina">
-          <!-- Слайды -->
-          <div class="card">
-            <img class="brands" src="./img/Lenovo.svg" alt="#" /><img
-              src="./img/arrow.svg"
-              alt="#"
-            />
+          <nav class="navi">
+            <ul class="navi__list">
+              <li class="navi__elem">
+                <a class="navi__name" href="#" autofocus
+                  >Ремонтируемые устройства</a
+                >
+              </li>
+              <li class="navi__elem">
+                <a class="navi__name" href="#">Ремонтируемые бренды</a>
+              </li>
+              <li class="navi__elem">
+                <a class="navi__name" href="#">Цены на услуги</a>
+              </li>
+              <li class="navi__elem">
+                <a class="navi__name" href="#">Адреса сервисных центров</a>
+              </li>
+              <li class="navi__elem">
+                <a class="navi__name" href="#">Специальные цены</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="about">
+            <div class="about__container">
+              <article class="about__text about__text--polovinka">
+                Мы являемся авторизованным сервисным центром по ремонту техники
+                Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+                официальной гарантией
+                <br />производителя.
+                <p>
+                  Мы успешно работаем с 1992 года и заслужили репутацию
+                  надежного партнера , что подтверждает большое количество
+                  постоянных клиентов. Мы гордимся тем, что к нам обращаются по
+                  рекомендациям и, в свою очередь, советуют нас родным и
+                  близким.
+                </p>
+                <br />
+                <p
+                  >Сложно сказать, почему стремящиеся вытеснить традиционное
+                  производство, нанотехнологии могут быть представлены в
+                  исключительно положительном свете. Приятно, граждане,
+                  наблюдать, как элементы политического процесса лишь добавляют
+                  фракционных разногласий и заблокированы в рамках своих
+                  собственных рациональных ограничений. С другой стороны,
+                  экономическая повестка сегодняшнего дня играет определяющее
+                  значение для соответствующих условий активизации.</p
+                >
+              </article>
+              <button class="viewmore viewmore--visible">
+                <span class="icon-button"></span>
+                <span class="icon-text">Читать далее</span>
+              </button>
+            </div>
+            <div class="kartinka"></div>
           </div>
-          <div class="card">
-            <img class="brands" src="./img/samsung.svg" alt="#" /><img
-              src="./img/arrow.svg"
-              alt="#"
-            />
-          </div>
-          <div class="card">
-            <img class="brands" src="./img/sony.svg" alt="#" /><img
-              src="./img/arrow.svg"
-              alt="#"
-            />
-          </div>
-          <div class="card">
-            <img class="brands" src="./img/hp.svg" alt="#" /><img
-              src="./img/arrow.svg"
-              alt="#"
-            />
-          </div>
-          <div class="card">
-            <img src="./img/ViewSonic.svg" alt="#" />
-            <img src="./img/arrow.svg" alt="#" />
-          </div>
-          <div class="card">
-            <img class="brands" src="./img/acer.svg" alt="#" />
-            <img src="./img/arrow.svg" alt="#" />
-          </div>
-          <div class="card">
-            <img class="brands" src="./img/apple.svg" alt="#" /><img
-              src="./img/arrow.svg"
-              alt="#"
-            />
-          </div>
-          <div class="card">
-            <img class="brands" src="./img/bosch.svg" alt="#" /><img
-              src="./img/arrow.svg"
-              alt="#"
-            />
-          </div>
-          <div class="card">
-            <img class="brands" src="./img/hp.svg" alt="#" /><img
-              src="./img/arrow.svg"
-              alt="#"
-            />
-          </div>
-          <div class="card">
-            <img class="brands" src="./img/Lenovo.svg" alt="#" /><img
-              src="./img/arrow.svg"
-              alt="#"
-            />
-          </div>
-          <div class="card">
-            <img class="brands" src="./img/samsung.svg" alt="#" /><img
-              src="./img/arrow.svg"
-              alt="#"
-            />
-          </div>
-          <div class="card">
-            <img class="brands" src="./img/sony.svg" alt="#" /><img
-              src="./img/arrow.svg"
-              alt="#"
-            />
-          </div>
-        </div>
+        </main>
+        <!-- Левая боковина -->
 
-        <!-- Если нужны точечки под слайдами -->
-        <div class="swiper-pagination"></div>
-        <!-- ЕСли нужны стрелки -->
-        <!-- <div class="swiper-button-prev"></div>
+        <!-- Первый слайдер -->
+        <div class="slaider-part">
+          <div class="line"></div>
+          <h2 class="h2">РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</h2>
+          <!-- Основной контейнер слайдера -->
+          <div class="slider-container slaider1" data-mobile="false">
+            <!-- Дополнительная необходимая оболочка -->
+            <div class="swiper-wrapper swiper-wrapper--polovina">
+              <!-- Слайды -->
+              <div class="card">
+                <img class="brands" src="./img/Lenovo.svg" alt="#" /><img
+                  src="./img/arrow.svg"
+                  alt="#"
+                />
+              </div>
+              <div class="card">
+                <img class="brands" src="./img/samsung.svg" alt="#" /><img
+                  src="./img/arrow.svg"
+                  alt="#"
+                />
+              </div>
+              <div class="card">
+                <img class="brands" src="./img/sony.svg" alt="#" /><img
+                  src="./img/arrow.svg"
+                  alt="#"
+                />
+              </div>
+              <div class="card">
+                <img class="brands" src="./img/hp.svg" alt="#" /><img
+                  src="./img/arrow.svg"
+                  alt="#"
+                />
+              </div>
+              <div class="card">
+                <img src="./img/ViewSonic.svg" alt="#" />
+                <img src="./img/arrow.svg" alt="#" />
+              </div>
+              <div class="card">
+                <img class="brands" src="./img/acer.svg" alt="#" />
+                <img src="./img/arrow.svg" alt="#" />
+              </div>
+              <div class="card">
+                <img class="brands" src="./img/apple.svg" alt="#" /><img
+                  src="./img/arrow.svg"
+                  alt="#"
+                />
+              </div>
+              <div class="card">
+                <img class="brands" src="./img/bosch.svg" alt="#" /><img
+                  src="./img/arrow.svg"
+                  alt="#"
+                />
+              </div>
+              <div class="card">
+                <img class="brands" src="./img/hp.svg" alt="#" /><img
+                  src="./img/arrow.svg"
+                  alt="#"
+                />
+              </div>
+              <div class="card">
+                <img class="brands" src="./img/Lenovo.svg" alt="#" /><img
+                  src="./img/arrow.svg"
+                  alt="#"
+                />
+              </div>
+              <div class="card">
+                <img class="brands" src="./img/samsung.svg" alt="#" /><img
+                  src="./img/arrow.svg"
+                  alt="#"
+                />
+              </div>
+              <div class="card">
+                <img class="brands" src="./img/sony.svg" alt="#" /><img
+                  src="./img/arrow.svg"
+                  alt="#"
+                />
+              </div>
+            </div>
+
+            <!-- Если нужны точечки под слайдами -->
+            <div class="swiper-pagination"></div>
+            <!-- ЕСли нужны стрелки -->
+            <!-- <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div> -->
 
-        <!-- Если нужна полоса прокрутки -->
-        <!-- <div class="swiper-scrollbar"></div> -->
-      </div>
+            <!-- Если нужна полоса прокрутки -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+          </div>
 
-      <button class="viewmore">
-        <span class="icon-button"></span>
-        <span class="icon-text">Показать всё</span>
-      </button>
-    </div>
-    <!-- Второй слайдер -->
-    <div class="slaider-part">
-      <h2 class="h2">РЕМОНТ РАЗЛИЧНЫХ ВИДОВ ТЕХНИКИ </h2>
-      <div class="slider-container slaider2" data-mobile="false">
-        <!-- Дополнительная необходимая оболочка -->
-        <div class="swiper-wrapper swiper-wrapper--polovina">
-          <!-- Слайды -->
-          <div class="repair-card">
-            <span>Ремонт ноутбуков</span>
-            <img src="./img/arrow.svg" alt="#" />
+          <button class="viewmore">
+            <span class="icon-button"></span>
+            <span class="icon-text">Показать всё</span>
+          </button>
+        </div>
+        <!-- Второй слайдер -->
+        <div class="slaider-part">
+          <h2 class="h2">РЕМОНТ РАЗЛИЧНЫХ ВИДОВ ТЕХНИКИ </h2>
+          <div class="slider-container slaider2" data-mobile="false">
+            <!-- Дополнительная необходимая оболочка -->
+            <div class="swiper-wrapper swiper-wrapper--polovina">
+              <!-- Слайды -->
+              <div class="repair-card">
+                <span>Ремонт ноутбуков</span>
+                <img src="./img/arrow.svg" alt="#" />
+              </div>
+              <div class="repair-card">
+                <span>Ремонт планшетов</span>
+                <img src="./img/arrow.svg" alt="#" />
+              </div>
+              <div class="repair-card">
+                <span>Ремонт телефонов</span>
+                <img src="./img/arrow.svg" alt="#" />
+              </div>
+              <div class="repair-card">
+                <span>Ремонт вайфая</span>
+                <img src="./img/arrow.svg" alt="#" />
+              </div>
+              <div class="repair-card">
+                <span>Ремонт стеклопакетов</span>
+                <img src="./img/arrow.svg" alt="#" />
+              </div>
+              <div class="repair-card">
+                <span>Ремонт розеток</span>
+                <img src="./img/arrow.svg" alt="#" />
+              </div>
+              <div class="repair-card">
+                <span>Ремонт вэйпов</span>
+                <img src="./img/arrow.svg" alt="#" />
+              </div>
+              <div class="repair-card">
+                <span>Ремонт каблуков</span>
+                <img src="./img/arrow.svg" alt="#" />
+              </div>
+              <div class="repair-card">
+                <span>Ремонт ворот</span>
+                <img src="./img/arrow.svg" alt="#" />
+              </div>
+              <div class="repair-card">
+                <span>Ремонт IQOS</span>
+                <img src="./img/arrow.svg" alt="#" />
+              </div>
+              <div class="repair-card">
+                <span>Ремонт Samsung</span>
+                <img src="./img/arrow.svg" alt="#" />
+              </div>
+              <div class="repair-card">
+                <span>Ремонт Apple</span>
+                <img src="./img/arrow.svg" alt="#" />
+              </div>
+            </div>
+
+            <!-- Если нужны точечки под слайдами -->
+            <div class="swiper-pagination"></div>
           </div>
-          <div class="repair-card">
-            <span>Ремонт планшетов</span>
-            <img src="./img/arrow.svg" alt="#" />
+
+          <button class="viewmore">
+            <span class="icon-button"></span>
+            <span class="icon-text">Показать всё</span>
+          </button>
+        </div>
+        <!-- Третий слайдер -->
+        <div class="slaider-part">
+          <h2 class="h2">ЦЕНЫ НА УСЛУГИ</h2>
+          <div class="price-card price-card--hidden">
+            <span class="price-card__service">Услуги</span>
+            <span class="price-card__price">Срок</span>
+            <span class="price-card__time">Цена</span>
+            <button class="price_card__order price_card__order--hidden">
+              Заказать
+              <img src="./img/right arrows.svg" alt="" />
+            </button>
           </div>
-          <div class="repair-card">
-            <span>Ремонт телефонов</span>
-            <img src="./img/arrow.svg" alt="#" />
-          </div>
-          <div class="repair-card">
-            <span>Ремонт вайфая</span>
-            <img src="./img/arrow.svg" alt="#" />
-          </div>
-          <div class="repair-card">
-            <span>Ремонт стеклопакетов</span>
-            <img src="./img/arrow.svg" alt="#" />
-          </div>
-          <div class="repair-card">
-            <span>Ремонт розеток</span>
-            <img src="./img/arrow.svg" alt="#" />
-          </div>
-          <div class="repair-card">
-            <span>Ремонт вэйпов</span>
-            <img src="./img/arrow.svg" alt="#" />
-          </div>
-          <div class="repair-card">
-            <span>Ремонт каблуков</span>
-            <img src="./img/arrow.svg" alt="#" />
-          </div>
-          <div class="repair-card">
-            <span>Ремонт ворот</span>
-            <img src="./img/arrow.svg" alt="#" />
-          </div>
-          <div class="repair-card">
-            <span>Ремонт IQOS</span>
-            <img src="./img/arrow.svg" alt="#" />
-          </div>
-          <div class="repair-card">
-            <span>Ремонт Samsung</span>
-            <img src="./img/arrow.svg" alt="#" />
-          </div>
-          <div class="repair-card">
-            <span>Ремонт Apple</span>
-            <img src="./img/arrow.svg" alt="#" />
+
+          <div class="slider-container slaider3" data-mobile="false">
+            <!-- Дополнительная необходимая оболочка -->
+            <div class="swiper-wrapper">
+              <!-- Слайды -->
+              <div class="price-card">
+                <span class="price-card__service"
+                  >Тестирование с выдачей технического заключения</span
+                >
+                <span class="price-card__price">от 150 ₽</span>
+                <span class="price-card__time">30-60 мин</span>
+                <button class="price_card__order">
+                  Заказать
+                  <img src="./img/right arrows.svg" alt="" />
+                </button>
+              </div>
+              <div class="price-card">
+                <span class="price-card__service"
+                  >Рентгенография вашего устройства</span
+                >
+                <span class="price-card__price">от 1500 ₽</span>
+                <span class="price-card__time">130-600 мин</span>
+                <button class="price_card__order">
+                  Заказать
+                  <img src="./img/right arrows.svg" alt="" />
+                </button>
+              </div>
+
+              <div class="price-card">
+                <span class="price-card__service"
+                  >Заключение о заключении брака</span
+                >
+                <span class="price-card__price">Бесплатно</span>
+                <span class="price-card__time">5-10 мин</span>
+                <button class="price_card__order">
+                  Заказать
+                  <img src="./img/right arrows.svg" alt="" />
+                </button>
+              </div>
+
+              <div class="price-card">
+                <span class="price-card__service">Выдача в окне выдачи</span>
+                <span class="price-card__price">от 250 ₽</span>
+                <span class="price-card__time">20-30 мин</span>
+                <button class="price_card__order">
+                  Заказать
+                  <img src="./img/right arrows.svg" alt="" />
+                </button>
+              </div>
+              <div class="price-card">
+                <span class="price-card__service"
+                  >Фотография на паспорт устройства</span
+                >
+                <span class="price-card__price">от 500 ₽</span>
+                <span class="price-card__time">15-30 мин</span>
+                <button class="price_card__order">
+                  Заказать
+                  <img src="./img/right arrows.svg" alt="" />
+                </button>
+              </div>
+              <div class="price-card">
+                <span class="price-card__service"
+                  >Замена дисплея магнитолы</span
+                >
+                <span class="price-card__price">от 9000 ₽</span>
+                <span class="price-card__time">60-90 мин</span>
+                <button class="price_card__order">
+                  Заказать
+                  <img src="./img/right arrows.svg" alt="" />
+                </button>
+              </div>
+              <div class="price-card">
+                <span class="price-card__service"
+                  >Тест-драйв Нового Pro Max Ultra 18 Plus Minus</span
+                >
+                <span class="price-card__price">от 100000 ₽</span>
+                <span class="price-card__time">1-7 дней</span>
+                <button class="price_card__order">
+                  Заказать
+                  <img src="./img/right arrows.svg" alt="" />
+                </button>
+              </div>
+              <div class="price-card">
+                <span class="price-card__service"
+                  >Замена программного обеспечения</span
+                >
+                <span class="price-card__price">от 1650 ₽</span>
+                <span class="price-card__time">10-60 мин</span>
+                <button class="price_card__order">
+                  Заказать
+                  <img src="./img/right arrows.svg" alt="" />
+                </button>
+              </div>
+              <div class="price-card">
+                <span class="price-card__service"
+                  >Замена полифонического динамика</span
+                >
+                <span class="price-card__price">от 2000 ₽</span>
+                <span class="price-card__time">40-70 мин</span>
+                <button class="price_card__order">
+                  Заказать
+                  <img src="./img/right arrows.svg" alt="" />
+                </button>
+              </div>
+              <div class="price-card">
+                <span class="price-card__service"
+                  >Тестирование с выдачей технического заключения</span
+                >
+                <span class="price-card__price">от 150 ₽</span>
+                <span class="price-card__time">30-60 мин</span>
+                <button class="price_card__order">
+                  Заказать
+                  <img src="./img/right arrows.svg" alt="" />
+                </button>
+              </div>
+              <div class="price-card">
+                <span class="price-card__service">Диагностика</span>
+                <span class="price-card__price">от 50 ₽</span>
+                <span class="price-card__time">30-60 мин</span>
+                <button class="price_card__order">
+                  Заказать
+                  <img src="./img/right arrows.svg" alt="" />
+                </button>
+              </div>
+              <div class="price-card">
+                <span class="price-card__service">Трезвый водитель</span>
+                <span class="price-card__price">от 2500 ₽</span>
+                <span class="price-card__time">120-130 мин </span>
+                <button class="price_card__order">
+                  Заказать
+                  <img src="./img/right arrows.svg" alt="" />
+                </button>
+              </div>
+            </div>
+            <!-- Если нужны точечки под слайдами -->
+            <div class="swiper-pagination"></div>
           </div>
         </div>
+        <div class="oferta"
+          >Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную
+          услугу. Для получения коммерческого предложения на постоянное
+          обслуживание, оставьте заявку.
+        </div>
+        <button class="oferta_button">
+          <span class="oferta_button__text">
+            Получить коммерческое предложение
+          </span>
 
-        <!-- Если нужны точечки под слайдами -->
-        <div class="swiper-pagination"></div>
-      </div>
-
-      <button class="viewmore">
-        <span class="icon-button"></span>
-        <span class="icon-text">Показать всё</span>
-      </button>
-    </div>
-    <!-- Третий слайдер -->
-    <div class="slaider-part">
-      <h2 class="h2">ЦЕНЫ НА УСЛУГИ</h2>
-      <div class="price-card price-card--hidden">
-        <span class="price-card__service">Услуги</span>
-        <span class="price-card__price">Срок</span>
-        <span class="price-card__time">Цена</span>
-        <button class="price_card__order price_card__order--hidden">
-          Заказать
-          <img src="./img/right arrows.svg" alt="" />
+          <img
+            class="oferta_button__arrow"
+            src="./img/right arrows red.svg"
+            alt=""
+          />
         </button>
-      </div>
 
-      <div class="slider-container slaider3" data-mobile="false">
-        <!-- Дополнительная необходимая оболочка -->
-        <div class="swiper-wrapper">
-          <!-- Слайды -->
-          <div class="price-card">
-            <span class="price-card__service"
-              >Тестирование с выдачей технического заключения</span
-            >
-            <span class="price-card__price">от 150 ₽</span>
-            <span class="price-card__time">30-60 мин</span>
-            <button class="price_card__order">
-              Заказать
-              <img src="./img/right arrows.svg" alt="" />
-            </button>
-          </div>
-          <div class="price-card">
-            <span class="price-card__service"
-              >Рентгенография вашего устройства</span
-            >
-            <span class="price-card__price">от 1500 ₽</span>
-            <span class="price-card__time">130-600 мин</span>
-            <button class="price_card__order">
-              Заказать
-              <img src="./img/right arrows.svg" alt="" />
-            </button>
-          </div>
-
-          <div class="price-card">
-            <span class="price-card__service"
-              >Заключение о заключении брака</span
-            >
-            <span class="price-card__price">Бесплатно</span>
-            <span class="price-card__time">5-10 мин</span>
-            <button class="price_card__order">
-              Заказать
-              <img src="./img/right arrows.svg" alt="" />
-            </button>
-          </div>
-
-          <div class="price-card">
-            <span class="price-card__service">Выдача в окне выдачи</span>
-            <span class="price-card__price">от 250 ₽</span>
-            <span class="price-card__time">20-30 мин</span>
-            <button class="price_card__order">
-              Заказать
-              <img src="./img/right arrows.svg" alt="" />
-            </button>
-          </div>
-          <div class="price-card">
-            <span class="price-card__service"
-              >Фотография на паспорт устройства</span
-            >
-            <span class="price-card__price">от 500 ₽</span>
-            <span class="price-card__time">15-30 мин</span>
-            <button class="price_card__order">
-              Заказать
-              <img src="./img/right arrows.svg" alt="" />
-            </button>
-          </div>
-          <div class="price-card">
-            <span class="price-card__service">Замена дисплея магнитолы</span>
-            <span class="price-card__price">от 9000 ₽</span>
-            <span class="price-card__time">60-90 мин</span>
-            <button class="price_card__order">
-              Заказать
-              <img src="./img/right arrows.svg" alt="" />
-            </button>
-          </div>
-          <div class="price-card">
-            <span class="price-card__service"
-              >Тест-драйв Нового Pro Max Ultra 18 Plus Minus</span
-            >
-            <span class="price-card__price">от 100000 ₽</span>
-            <span class="price-card__time">1-7 дней</span>
-            <button class="price_card__order">
-              Заказать
-              <img src="./img/right arrows.svg" alt="" />
-            </button>
-          </div>
-          <div class="price-card">
-            <span class="price-card__service"
-              >Замена программного обеспечения</span
-            >
-            <span class="price-card__price">от 1650 ₽</span>
-            <span class="price-card__time">10-60 мин</span>
-            <button class="price_card__order">
-              Заказать
-              <img src="./img/right arrows.svg" alt="" />
-            </button>
-          </div>
-          <div class="price-card">
-            <span class="price-card__service"
-              >Замена полифонического динамика</span
-            >
-            <span class="price-card__price">от 2000 ₽</span>
-            <span class="price-card__time">40-70 мин</span>
-            <button class="price_card__order">
-              Заказать
-              <img src="./img/right arrows.svg" alt="" />
-            </button>
-          </div>
-          <div class="price-card">
-            <span class="price-card__service"
-              >Тестирование с выдачей технического заключения</span
-            >
-            <span class="price-card__price">от 150 ₽</span>
-            <span class="price-card__time">30-60 мин</span>
-            <button class="price_card__order">
-              Заказать
-              <img src="./img/right arrows.svg" alt="" />
-            </button>
-          </div>
-          <div class="price-card">
-            <span class="price-card__service">Диагностика</span>
-            <span class="price-card__price">от 50 ₽</span>
-            <span class="price-card__time">30-60 мин</span>
-            <button class="price_card__order">
-              Заказать
-              <img src="./img/right arrows.svg" alt="" />
-            </button>
-          </div>
-          <div class="price-card">
-            <span class="price-card__service">Трезвый водитель</span>
-            <span class="price-card__price">от 2500 ₽</span>
-            <span class="price-card__time">120-130 мин </span>
-            <button class="price_card__order">
-              Заказать
-              <img src="./img/right arrows.svg" alt="" />
-            </button>
-          </div>
-        </div>
-        <!-- Если нужны точечки под слайдами -->
-        <div class="swiper-pagination"></div>
+        <footer class="footer">
+          <div class="footer_law">
+            <span> © 2019 CPS <br />Разработано командой Apesong </span
+            ><span>Политика конфиденциальности</span
+            ><span class="footer_law__CPS">
+              Информация, размещенная на данной странице, не является публичной
+              офертой</span
+            ></div
+          >
+        </footer>
       </div>
     </div>
-    <div class="oferta"
-      >Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную
-      услугу. Для получения коммерческого предложения на постоянное
-      обслуживание, оставьте заявку.</div
-    >
-    <button class="oferta_button"
-      >Получить коммерческое предложение
-      <img src="./img/right arrows red.svg" alt="" />
-    </button>
-
-    <footer class="footer">
-      <div class="footer_law">
-        <span> © 2019 CPS <br />Разработано командой Apesong </span
-        ><span>Политика конфиденциальности</span
-        ><span class="footer_law__CPS">
-          Информация, размещенная на данной странице, не является публичной
-          офертой</span
-        ></div
-      >
-    </footer>
   </body>
 </html>

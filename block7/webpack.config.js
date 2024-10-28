@@ -65,7 +65,7 @@ module.exports = {
   plugins: [
     // Подключаем файл html, стили и скрипты встроятся автоматически
     new HtmlWebpackPlugin({
-      title: 'Ремонт техники',
+      title: 'CPS Ремонт техники',
       template: './src/index.html',
       inject: true,
       minify: {

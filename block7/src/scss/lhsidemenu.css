@@ -7,7 +7,7 @@
   position: absolute;
   left: -400px;
   top: 0px;
-  height: 100vh;
+  height: 100%;
   z-index: 20;
 }
 
@@ -153,14 +153,30 @@ ul li {
 }
 
 @media (min-width: 1440px) {
+  body {
+    width: 1440px;
+  }
+
+  .wide {
+    display: grid;
+    grid-template-columns: 10% 90%;
+  }
+
   .lh-side {
+    position: relative;
     left: 0px;
     width: 250px;
   }
   .lh-side--surfaced {
     box-shadow: none;
   }
-  body {
-    width: 1370px;
+
+  .wide-right {
+    width: 1120px;
+    padding-left: 200px;
+  }
+
+  .side-bar__close {
+    display: none;
   }
 }
