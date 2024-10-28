@@ -6,7 +6,8 @@
 
 body {
   background-color: var(--body-color);
-  font-family: 'TT Lakes';
+  /* font-family: 'TT Lakes'; */
+  font-family: 'TT Lakes', Helvetica, sans-serif;
 }
 
 li {

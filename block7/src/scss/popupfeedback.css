@@ -1,0 +1,54 @@
+.popup__container {
+  display: flex;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  gap: 16px;
+  flex-direction: column;
+}
+
+.popup {
+  position: relative;
+  background-color: white;
+  width: 320px;
+  height: 100%;
+  position: absolute;
+  right: 0px;
+  z-index: 21;
+}
+
+.popup__form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.popup__title {
+  height: 50px;
+}
+
+.form__input {
+  border: 1px solid grey;
+  border-radius: 6px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  padding: 12px 16px;
+  width: auto;
+  margin-bottom: 16px;
+  color: var(--navi-name-color);
+  font-family: 'TT Lakes';
+}
+
+.feedback_oreder {
+  align-self: end;
+}
+
+.form__text {
+  font-family: 'TT Lakes';
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+  letter-spacing: 0.2px;
+}
