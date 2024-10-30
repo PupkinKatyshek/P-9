@@ -83,6 +83,8 @@ mobileSlider()
 window.addEventListener('resize', () => {
   mobileSlider()
 })
+
+// Раскрытие списков
 let about = document.querySelector('.about__text')
 let toogle = document.querySelectorAll('.viewmore')
 let but = document.querySelectorAll('.icon-text')
@@ -128,3 +130,78 @@ toogle2.onclick = function () {
     strelochka[2].style.webkitTransform = 'rotate(0deg)'
   }
 }
+
+// Кнопки "Обратной связи", "Заказать звонок", "Меню"
+
+let call = document.querySelectorAll('.call_button')
+let feedback = document.querySelectorAll('.feedback_button')
+let popUp = document.querySelectorAll('.popup')
+let burger = document.querySelector('.header__burger')
+let close = document.querySelectorAll('.buttons__close')
+let lhSide = document.querySelector('.lh-side__container')
+let lhSideClose = document.querySelector('.side-bar__close')
+// Показать "обратную связь"
+feedback[0].onclick = function () {
+  console.log('Напиши нам')
+  popUp[0].classList.add('popup--visible')
+}
+
+feedback[1].onclick = function () {
+  console.log('Напиши нам')
+  popUp[0].classList.add('popup--visible')
+}
+// Скрыть попап по кнопке
+close[0].addEventListener('click', () => {
+  popUp[0].classList.remove('popup--visible')
+  popUp[0].classList.add('popup--hidden')
+})
+
+close[1].addEventListener('click', () => {
+  popUp[1].classList.remove('popup--visible')
+  popUp[1].classList.add('popup--hidden')
+})
+
+// Закрыть попап по блюру
+document.addEventListener('click', (e) => {
+  if (e.target === popUp[0]) {
+    popUp[0].classList.remove('popup--visible')
+    popUp[0].classList.add('popup--hidden')
+  }
+  if (e.target === popUp[1]) {
+    popUp[1].classList.remove('popup--visible')
+    popUp[1].classList.add('popup--hidden')
+  }
+})
+// Показать "Заказать звонок"
+call[1].onclick = function () {
+  popUp[1].classList.add('popup--visible')
+  console.log('Звонок')
+}
+
+call[0].onclick = function () {
+  popUp[1].classList.add('popup--visible')
+  console.log('Звонок')
+}
+
+// Боковое меню
+
+let lhSideBlur = document.querySelector('.lh-side')
+
+burger.onclick = function () {
+  console.log('Меню')
+  lhSide.style.left = '0px'
+  lhSideBlur.style.position = 'fixed'
+}
+
+lhSideClose.onclick = function () {
+  console.log('Закрыть меню')
+  lhSide.style.left = '-400px'
+  lhSideBlur.style.position = 'relative'
+}
+
+document.addEventListener('click', (e) => {
+  if (e.target === lhSideBlur) {
+    lhSide.style.left = '-400px'
+    lhSideBlur.style.position = 'relative'
+  }
+})

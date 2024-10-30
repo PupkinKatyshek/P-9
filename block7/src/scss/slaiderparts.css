@@ -18,6 +18,11 @@ li {
   --line-color: #d9fff5;
 }
 
+.arrow:hover {
+  scale: 1.2;
+  transition-duration: 0.3s;
+}
+
 .slaider-part {
   padding-top: 20px;
 }
@@ -60,8 +65,10 @@ li {
   justify-content: space-between;
 }
 
-.card:hover {
+.card:hover,
+.repair-card:hover {
   opacity: 0.5;
+  border-color: var(--buttons-color);
 }
 
 .large {
@@ -371,6 +378,12 @@ li {
   justify-content: space-around;
   align-items: center;
   cursor: pointer;
+}
+
+.price-card:hover,
+.price_card__order:hover {
+  transition: 0.5s;
+  font-weight: 500;
 }
 
 .price-card--hidden {

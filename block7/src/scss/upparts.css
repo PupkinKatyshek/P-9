@@ -397,7 +397,7 @@ main {
     width: 320px;
   } */
 
-  ..about__text--polovinka {
+  .about__text--polovinka {
     height: 90px;
     width: auto;
     transition: 500ms;
@@ -408,13 +408,13 @@ main {
   }
 }
 
-@media (max-width: 1120px) {
+@media (max-width: 1440px) {
   .h1__visible {
     display: none;
   }
 }
 
-@media (min-width: 1120px) {
+@media (min-width: 1440px) {
   .h1 {
     padding: 0px 34px 0px 34px;
     color: #1b1c21;
@@ -472,7 +472,7 @@ main {
     width: 50%;
   }
 
-  ..about__text--polovinka {
+  .about__text--polovinka {
     width: 490px;
     height: 160px;
     /* transition: 500ms; */
