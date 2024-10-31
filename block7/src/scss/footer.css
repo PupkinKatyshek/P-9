@@ -18,7 +18,7 @@
   justify-content: space-between;
   gap: 16px;
   padding: 80px 16px 0px 16px;
-  color: #7e7e82;
+  color: var(--navi-name-color);
 }
 
 .footer_law__CPS {
@@ -48,14 +48,9 @@
     display: flex;
     justify-content: space-between;
     font-weight: 500;
-    /* padding-left: 16px; */
+
     text-align: start;
   }
-
-  /* .oferta_button::after {
-    position: relative;
-    right: 80px;
-  } */
 }
 
 @media (min-width: 769px) {
