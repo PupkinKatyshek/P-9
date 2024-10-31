@@ -786,7 +786,6 @@ body {
   justify-content: space-between;
   gap: 16px;
   flex-shrink: 0;
-  align-items: center;
   left: 0px;
   bottom: 0px;
   cursor: pointer;
@@ -832,8 +831,8 @@ body {
   border: 1px solid transparent;
   flex-shrink: 0;
   position: relative;
-  bottom: 0px;
-  left: 0px;
+  bottom: 50px;
+  left: 105px;
   justify-content: space-around;
   align-items: center;
   cursor: pointer;
@@ -1596,6 +1595,11 @@ main {
   right: 0px;
   z-index: 36;
   justify-content: end;
+}
+
+.feedback_order {
+  left: 0px;
+  bottom: 0px;
 }
 
 .popup--hidden {
