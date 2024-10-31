@@ -832,8 +832,8 @@ body {
   border: 1px solid transparent;
   flex-shrink: 0;
   position: relative;
-  bottom: 50px;
-  left: 105px;
+  bottom: 0px;
+  left: 0px;
   justify-content: space-around;
   align-items: center;
   cursor: pointer;
