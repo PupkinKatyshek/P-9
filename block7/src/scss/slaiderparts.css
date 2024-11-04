@@ -299,18 +299,19 @@
   display: flex;
   flex-direction: column;
   width: 260px;
-  height: 216px;
+  height: 200px;
   border: solid 1px #eaeaea;
   border-radius: 5px;
   box-sizing: border-box;
-  /* cursor: pointer; */
   background-color: #ffffff;
   font-weight: 400;
   padding: 16px;
   justify-content: space-between;
-  /* align-items: center; */
-  gap: 16px;
+  /* gap: 16px; */
   flex-shrink: 0;
+  left: 0px;
+  bottom: 0px;
+  cursor: pointer;
 }
 
 .price-card__service {
@@ -343,6 +344,13 @@
   color: #b5b6bc;
 }
 
+.price-card__time-container {
+  display: flex;
+  justify-content: space-between;
+  align-self: auto;
+  align-items: end;
+}
+
 .price_card__order {
   display: flex;
   color: #ffffff;
@@ -352,7 +360,7 @@
   height: 32px;
   border: 1px solid transparent;
   flex-shrink: 0;
-  position: relative;
+  /* position: relative; */
   bottom: 50px;
   left: 105px;
   justify-content: space-around;
@@ -379,7 +387,7 @@
 
   .price-card {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 0.5fr;
+    grid-template-columns: 2fr 1fr 1fr;
     width: 100%;
     height: auto;
     border: 1px solid transparent;
@@ -443,8 +451,8 @@
 
   .price-card--hidden {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 0.5fr;
-    padding-left: 60px;
-    padding-right: 40px;
+    grid-template-columns: 2fr 1fr 1fr;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }

@@ -155,19 +155,26 @@
   }
 
   .wide {
-    display: grid;
-    grid-template-columns: 10% 90%;
+    display: flex;
+    /* grid-template-columns: 10% 90%; */
+  }
+
+  .lh-side {
+    height: 100vh;
+    width: 264px;
+    background-color: var(--header-color);
   }
 
   .lh-side__container {
-    position: fixed;
+    position: relative;
     left: 0px;
-    width: 250px;
+    width: 264px;
+    height: 100vh;
   }
 
   .wide-right {
     width: 1120px;
-    padding-left: 200px;
+    /* padding-left: 200px; */
   }
 
   .side-bar__close {

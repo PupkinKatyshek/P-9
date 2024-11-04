@@ -8,6 +8,11 @@
   justify-content: end;
 }
 
+.feedback_order {
+  left: 0px;
+  bottom: 0px;
+}
+
 .popup--hidden {
   display: none;
   transition: 500ms;
