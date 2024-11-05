@@ -149,9 +149,33 @@
   color: var(--navi-name-color);
 }
 
+@media (min-width: 360px) {
+  .lh-side__container {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    background-color: var(--header-color);
+    margin-right: auto;
+    position: absolute;
+    left: -400px;
+    top: 0px;
+    height: 100%;
+    z-index: 20;
+  }
+  .side-bar__search {
+    position: relative;
+    left: 100px;
+  }
+}
+
 @media (min-width: 1440px) {
   body {
     width: 1440px;
+  }
+
+  .side-bar__search {
+    position: relative;
+    left: 62px;
   }
 
   .wide {
@@ -160,7 +184,7 @@
   }
 
   .lh-side {
-    height: 2012px;
+    height: 2027px;
     width: 264px;
     background-color: var(--header-color);
   }
