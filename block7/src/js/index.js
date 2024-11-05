@@ -73,6 +73,7 @@ function mobileSlider() {
     if (slider.classList.contains('swiper-initialized')) {
       mySwiper.destroy()
       mySwiper1.destroy()
+      mySwiper2.destroy()
     }
     // console.log(slider.classList);
   }
