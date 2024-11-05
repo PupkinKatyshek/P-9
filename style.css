@@ -1427,7 +1427,7 @@ main {
   display: flex;
   justify-content: space-between;
   gap: 16px;
-  padding: 80px 16px 0px 16px;
+  padding: 80px 16px 16px 16px;
   color: var(--navi-name-color);
 }
 
