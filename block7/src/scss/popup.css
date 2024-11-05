@@ -98,4 +98,9 @@
     right: 80px;
     top: 8px;
   }
+
+  .popup__container {
+    width: 440px;
+    height: 100%;
+  }
 }
